@@ -27,24 +27,17 @@ export const skillsData: SkillCategory[] = [
     ],
   },
   {
+    category: "Mobile",
+    items: [
+      { name: "Flutter", icon: "flutter", proficiency: "Intermediate" },
+    ],
+  },
+  {
     category: "Databases",
     items: [
       { name: "PostgreSQL", icon: "postgresql", proficiency: "Advanced" },
       { name: "MongoDB", icon: "mongodb", proficiency: "Advanced" },
       { name: "SQLite", icon: "sqlite", proficiency: "Advanced" },
-    ],
-  },
-  {
-    category: "Mobile",
-    items: [{ name: "Flutter", icon: "flutter", proficiency: "Intermediate" }],
-  },
-  {
-    category: "Tools",
-    items: [
-      { name: "Git", icon: "git", proficiency: "Advanced" },
-      { name: "GitHub", icon: "github", proficiency: "Advanced" },
-      { name: "VS Code", icon: "vscode", proficiency: "Advanced" },
-      { name: "Postman", icon: "postman", proficiency: "Advanced" },
     ],
   },
 ];

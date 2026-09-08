@@ -13,13 +13,10 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-text-primary mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-text-primary mb-8">
             {contactData.title}
           </h2>
-          <p className="text-text-secondary text-base md:text-lg mb-8 max-w-xl mx-auto">
-            {contactData.description}
-          </p>
-          <div className="flex flex-row justify-center items-start gap-8 sm:gap-12">
+          <div className="flex flex-row justify-center items-center gap-8 sm:gap-12">
             <a
               href={`mailto:${contactData.email}?subject=${contactData.emailSubject}&body=${contactData.emailBody}`}
               className="flex flex-col items-center gap-1 text-text-secondary hover:text-candy-blue transition-colors group"

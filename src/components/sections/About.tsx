@@ -17,10 +17,6 @@ export default function About() {
           <div className="space-y-5 text-text-secondary leading-relaxed border-l-2 border-candy-blue/30 pl-6 ml-6">
             {aboutData.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
             <div className="flex items-center gap-3 mt-4">
-              <span className="text-candy-blue font-medium">Currently Learning:</span>
-              <span className="bg-candy-blue/10 text-candy-blue px-3 py-1 rounded-full text-sm">{aboutData.currentlyLearning}</span>
-            </div>
-            <div className="flex items-center gap-3 mt-2">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-candy-blue opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-candy-blue"></span>
