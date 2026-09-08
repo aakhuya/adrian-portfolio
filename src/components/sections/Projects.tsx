@@ -16,8 +16,8 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
         >
           <SectionHeading
-            title="What I'm Building"
-            subtitle="Projects in progress — solving real problems with modern technologies."
+            title="Projects"
+            subtitle="Real projects I've built — solving problems with modern technologies."
           />
           <div className="flex flex-wrap justify-center gap-6">
             {projectsData.map((project, i) => (
@@ -46,7 +46,7 @@ export default function Projects() {
                       ))}
                     </div>
                     <span className="text-candy-blue/70 text-xs mt-4 inline-flex items-center gap-1">
-                      <span className="w-2 h-2 rounded-full bg-candy-blue animate-pulse" />{" "}
+                      <span className="w-2 h-2 rounded-full bg-candy-blue" />{" "}
                       {project.status}
                     </span>
                   </Card>
