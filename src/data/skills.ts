@@ -2,12 +2,11 @@ export interface Skill { name: string; icon: string; proficiency: string; }
 export interface SkillCategory { category: string; items: Skill[]; }
 export const skillsData: SkillCategory[] = [
   {
-    category: "Languages & Core",
+    category: "Languages",
     items: [
       { name: "Python", icon: "python", proficiency: "Advanced" },
       { name: "JavaScript", icon: "javascript", proficiency: "Advanced" },
       { name: "TypeScript", icon: "typescript", proficiency: "Advanced" },
-      { name: "HTML5", icon: "html5", proficiency: "Advanced" },
     ],
   },
   {
