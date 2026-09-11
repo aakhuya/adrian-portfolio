@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { heroData } from "@/data/hero";
 import TypingText from "@/components/ui/TypingText";
 import Button from "@/components/ui/Button";
@@ -13,7 +14,14 @@ export default function Hero() {
       {/* Desktop background */}
       {!isMobile && (
         <div className="absolute top-0 left-0 w-full h-screen z-0">
-          <img src="/images/ME.png" alt="" className="w-full h-full object-cover object-top" />
+          <Image
+            src="/images/ME.png"
+            alt="Adrian Akhuya"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-top"
+          />
         </div>
       )}
 
@@ -33,10 +41,13 @@ export default function Hero() {
           {/* Top half: cd.png with portrait */}
           <div className="relative h-[45vh] flex items-center justify-center">
             <div className="absolute inset-0">
-              <img
+              <Image
                 src="/images/cd.png"
                 alt=""
-                className="w-full h-full object-cover opacity-25"
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover opacity-25"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-onyx" />
             </div>
@@ -48,9 +59,12 @@ export default function Hero() {
               className="relative w-full max-w-[240px]"
             >
               <div className="rounded-2xl overflow-hidden border-2 border-candy-blue/40">
-                <img
+                <Image
                   src="/images/Potrait.png"
                   alt="Adrian Akhuya"
+                  width={480}
+                  height={640}
+                  priority
                   className="w-full h-auto"
                 />
               </div>
@@ -66,7 +80,7 @@ export default function Hero() {
               className="text-center w-full max-w-sm mx-auto"
             >
               <p className="text-candy-blue text-xs font-mono tracking-widest mb-2">
-                Hello I'm
+                Hello I&apos;m
               </p>
 
               <h1 className="text-4xl leading-[0.9] font-heading font-bold">
@@ -116,7 +130,7 @@ export default function Hero() {
               style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8)' }}
             >
               <p className="text-text-secondary text-base font-mono tracking-wider mb-3">
-                Hello I'm
+                Hello I&apos;m
               </p>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-text-primary leading-[0.9]">
                 {heroData.name.split(" ")[0]}<br />
