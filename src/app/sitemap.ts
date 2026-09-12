@@ -1,7 +1,11 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.adrianakhuya.dev";
+  // Use Vercel's automatic production URL to ensure the domain matches
+  const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL 
+    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` 
+    : "https://adrianakhuya.dev"; // Fallback for local development
+
   const now = new Date();
 
   return [
