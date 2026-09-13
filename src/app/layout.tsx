@@ -8,10 +8,32 @@ import PageClient from "@/components/PageClient";
 import BackToTop from "@/components/ui/BackToTop";
 
 export const metadata: Metadata = {
-  title: "adrian.dev | Full Stack Developer",
-  description: "I craft beautiful, functional digital experiences that bring ideas to life.",
+  title: "Adrian Akhuya — Full Stack Developer | Modern Web, Backend & Mobile",
+  description: "I'm Adrian Akhuya, a full-stack developer who builds software that turns ideas into things people can actually use. Specializing in Next.js, TypeScript, Python, FastAPI, PostgreSQL, and Flutter for modern web, backend, and mobile experiences.",
   icons: {
     icon: "/favicon.svg",
+  },
+  openGraph: {
+    title: "Adrian Akhuya — Full Stack Developer | Modern Web, Backend & Mobile",
+    description: "I'm Adrian Akhuya, a full-stack developer who builds software that turns ideas into things people can actually use. Specializing in Next.js, TypeScript, Python, FastAPI, PostgreSQL, and Flutter.",
+    url: "https://www.adrianakhuya.dev",
+    siteName: "adrianakhuya.dev",
+    images: [
+      {
+        url: "https://www.adrianakhuya.dev/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Adrian Akhuya — Full Stack Developer Portfolio",
+      },
+    ],
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adrian Akhuya — Full Stack Developer | Modern Web, Backend & Mobile",
+    description: "I'm Adrian Akhuya, a full-stack developer who builds software that turns ideas into things people can actually use.",
+    images: ["https://www.adrianakhuya.dev/images/og-image.png"],
   },
 };
 
