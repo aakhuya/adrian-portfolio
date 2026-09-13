@@ -240,7 +240,7 @@ Status:
             <div className="w-3 h-3 rounded-full bg-red-500" />
             <div className="w-3 h-3 rounded-full bg-yellow-500" />
             <div className="w-3 h-3 rounded-full bg-green-500" />
-            <span className="ml-3 text-[#858585] text-xs">guest@adrian.dev: ~/portfolio</span>
+            <span className="ml-3 text-[#858585] text-xs">guest@adrianakhuya.dev: ~/portfolio</span>
           </div>
 
           {/* Terminal body */}

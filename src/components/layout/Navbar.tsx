@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-40 bg-onyx/80 backdrop-blur-md border-b border-border/30">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         <a href="#home" className="text-xl md:text-2xl font-heading font-bold text-text-primary hover:text-candy-blue transition-colors">
-          adrian<span className="text-candy-blue">.</span>dev
+          adrianakhuya<span className="text-candy-blue">.</span>dev
         </a>
 
         <div className="hidden md:flex items-center gap-8">
