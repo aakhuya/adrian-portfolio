@@ -22,7 +22,9 @@ export const skillsData: SkillCategory[] = [
     category: "Backend",
     items: [
       { name: "Node.js", icon: "nodejs", proficiency: "Advanced" },
-      { name: "Flask", icon: "flask", proficiency: "Intermediate" },
+      { name: "Flask", icon: "flask", proficiency: "Advanced" },
+      { name: "FastAPI", icon: "fastapi", proficiency: "Advanced" },
+      { name: "SQLAlchemy", icon: "sqlalchemy", proficiency: "Advanced" },
     ],
   },
   {
