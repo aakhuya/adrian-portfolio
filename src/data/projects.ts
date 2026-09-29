@@ -15,7 +15,7 @@ export const projectsData: Project[] = [
     description: "Multi-tenant appointment scheduling platform for service businesses — booking pages, staff management, and a smart availability engine.",
     status: "In Development",
     tech: ["Next.js", "FastAPI", "Python", "PostgreSQL", "SQLAlchemy", "Tailwind CSS"],
-    live: "apointli.com",
+    live: "apointli-ihdo.vercel.app",
     code: "https://github.com/aakhuya/apointli",
   },
   {
