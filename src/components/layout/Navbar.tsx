@@ -38,13 +38,25 @@ export default function Navbar() {
 
       <AnimatePresence>
         {mobileOpen && (
-          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }} className="md:hidden bg-onyx/95 backdrop-blur-md border-b border-border/30 overflow-hidden">
-            <div className="px-4 py-4 flex flex-col gap-4">
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-onyx/95 backdrop-blur-md border-b border-border/30 overflow-hidden"
+          >
+            <div className="px-4 py-6 flex flex-col items-center gap-5 text-center">
               {navLinks.map(link => (
-                <a key={link.href} href={link.href} onClick={() => setMobileOpen(false)} className={cn(
-                  "text-sm font-medium transition-colors hover:text-candy-blue",
-                  activeSection === link.href.replace("#", "") ? "text-candy-blue" : "text-text-secondary"
-                )}>{link.label}</a>
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={cn(
+                    "text-base font-medium transition-colors hover:text-candy-blue",
+                    activeSection === link.href.replace("#", "") ? "text-candy-blue" : "text-text-secondary"
+                  )}
+                >
+                  {link.label}
+                </a>
               ))}
             </div>
           </motion.div>
